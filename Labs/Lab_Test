@@ -1,0 +1,23 @@
+# course: Object-oriented programming, year 2, semester 1
+# academic year: 201920
+# student: Aaron Healy C19495882
+# date: 06/11/20
+# purpose: Lab Test
+
+mylist = ['apple', 'banana', 'monkey', 'love']
+def in_my_list(sentence):
+    found = 0
+    sentence = sentence.lower()
+    for word in mylist:
+        if word in sentence:
+            found += 1
+        if found==2:
+            return True
+    return False
+
+sentence1 = "Monkeys love bananas"
+sentence2 = "The dog loves cats"
+in_my_list(sentence1)
+True
+in_my_list(sentence2)
+False

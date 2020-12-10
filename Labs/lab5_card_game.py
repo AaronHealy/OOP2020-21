@@ -3,14 +3,12 @@
 # author: B. Schoen-Phelan
 # date: Oct 2020
 # purpose: Lab 5 - GUI and card game using queue
+import random
 
 from tkinter import *
 
 # to use the queue FIFO
 from queue import Queue
-
-# to use the shuffle for shuffling the cards
-from random import shuffle
 
 
 class CardGame():
@@ -81,12 +79,12 @@ class CardGame():
         cards = Queue(maxsize=52) #change this if you want to use a different data structure
         suits = ("hearts", "diamonds", "spades", "clubs")
         people = ("queen", "jack", "king")
-        card_list = []
+        card_list = ['T', 2, 3, 4, 5, 6, 7, 8, 9, 10, "j", "q", "k"]
 
-        # your code goes here:
-
-        shuffle(card_list)
-
+        card_values = {"t":1, "2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9, "10":10, "j":10, "q":10, "k":10}
+        random.card = random.shuffle(card_list)
+        random.suit = random.shuffle(suits)
+        random.card = random.card, random.suits
         # your code goes here:
 
         return cards
